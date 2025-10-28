@@ -1,0 +1,54 @@
+.explore-online {
+  &__info {
+    margin-top: 40px;
+
+    @include page-grid;
+
+    row-gap: $gap-48;
+  }
+}
+
+.more {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: $gap-24;
+
+  @include on-tablet {
+    grid-column: 2 / 6;
+  }
+
+  @include on-desktop {
+    grid-column: span 4;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    margin-top: 24px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-large;
+    line-height: 140%;
+    letter-spacing: 0;
+    text-align: center;
+    color: $color-red;
+  }
+
+  &__details {
+    margin: 0;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    letter-spacing: 0;
+    text-align: center;
+    color: $color-text-main;
+  }
+}

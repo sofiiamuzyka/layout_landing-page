@@ -1,0 +1,129 @@
+.contacts__everything {
+  margin-top: 48px;
+
+  @include page-grid;
+
+  row-gap: $gap-48;
+}
+
+.contacts__info {
+  grid-column: 1 / -1;
+
+  @include on-tablet {
+    grid-column: 1 / 4;
+  }
+
+  @include on-desktop {
+    grid-column: 1 / 6;
+
+    display: grid;
+    column-gap: $column-gap;
+
+    --columns: 6;
+
+    grid-template-columns: repeat(var(--columns), 1fr);
+  }
+}
+
+.information {
+  @include on-desktop {
+    grid-column: span 3;
+  }
+}
+
+.contacts__form {
+  grid-column: 1 / -1;
+
+  @include on-tablet {
+    grid-column: 4 / -1;
+  }
+
+  @include on-desktop {
+    grid-column: 7 / -1;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: $gap-16;
+}
+
+.information__label {
+  margin: 0 0 4px;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-small;
+  line-height: $line-height-base;
+  letter-spacing: 0;
+  color: $color-text-main;
+}
+
+.information__location {
+  margin: 0 0 16px;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  letter-spacing: 0;
+  color: $color-text-main;
+}
+
+.information + .information {
+  margin-top: 48px;
+
+  @include on-desktop {
+    margin-top: 0;
+  }
+}
+
+.information__number,
+.information__adress {
+  margin: 0;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  letter-spacing: 0;
+  color: $color-gray-dark;
+}
+
+.information__number a {
+  text-decoration: none;
+  color: $color-gray-dark;
+}
+
+.information__adress a {
+  color: $color-gray-dark;
+  text-decoration: none;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  background: $color-gray-light;
+  border: none;
+  padding: 14px 12px;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-small;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.form__input {
+  height: 48px;
+}
+
+.form__textarea {
+  min-height: 144px;
+  resize: vertical;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: $color-gray-medium;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-small;
+  line-height: 20px;
+  letter-spacing: 0;
+}

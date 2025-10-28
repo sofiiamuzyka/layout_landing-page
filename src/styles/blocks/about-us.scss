@@ -1,0 +1,84 @@
+.about-us {
+  @include page-grid;
+
+  &__top {
+    margin-bottom: 32px;
+
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include on-desktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__info {
+    display: grid;
+    row-gap: $gap-24;
+
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 4 / 7;
+    }
+
+    @include on-desktop {
+      grid-column: span 6;
+    }
+  }
+}
+
+.visit {
+  margin: 0 0 2px;
+  font-weight: $font-weight-bold;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0;
+  color: $color-red;
+}
+
+.location {
+  &__adress {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-large;
+    line-height: 30px;
+    letter-spacing: 0;
+    margin: 0 0 16px;
+  }
+
+  &__schedule {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: $gap-8 $column-gap;
+    align-items: start;
+  }
+
+  &__hours,
+  &__days,
+  &__holiday {
+    margin: 0;
+  }
+
+  &__hours,
+  &__closed {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    letter-spacing: 0;
+  }
+
+  &__days,
+  &__holiday {
+    font-weight: $font-weight-regular;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    letter-spacing: 0;
+  }
+
+  &__closed {
+    margin: 16px 0 0;
+  }
+}

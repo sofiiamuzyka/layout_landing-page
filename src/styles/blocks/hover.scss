@@ -1,0 +1,54 @@
+img {
+  transition: all $transition ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.button {
+  transition: all $transition ease;
+}
+
+.button:hover {
+  color: $color-text-main;
+  transform: scale(1.05);
+}
+
+.menu__phone-numbers,
+.menu__call-to-order {
+  transition: all $transition;
+}
+
+.menu__phone-numbers:hover {
+  color: $color-text-main;
+}
+
+.menu__call-to-order:hover {
+  color: $color-text-main;
+  border-bottom-color: $color-text-main;
+}
+
+.information__adress a {
+  transition: all $transition;
+}
+
+.information__number a {
+  transition: all $transition;
+}
+
+.information__adress a:hover {
+  color: $color-red;
+}
+
+.information__number a:hover {
+  color: $color-red;
+}
+
+.header .menu__phone-numbers {
+  transition: all $transition;
+}
+
+.header .menu__phone-numbers:hover {
+  color: $color-red;
+}
