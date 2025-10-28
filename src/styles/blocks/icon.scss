@@ -1,11 +1,14 @@
 .icon {
   display: block;
+
   width: 24px;
   height: 24px;
-  background-position: center;
+
   background-repeat: no-repeat;
-  transition: all $transition;
+  background-position: center;
   background-size: contain;
+
+  transition: all $transition;
 
   @include on-tablet {
     width: 32px;
@@ -40,15 +43,19 @@
   position: absolute;
   top: 50%;
   right: 100%;
-  white-space: nowrap;
-  margin-right: 16px;
-  text-align: right;
-  opacity: 0;
   transform: translateY(-50%) translateX(16px);
+
+  margin-right: 16px;
+
+  text-align: right;
+  white-space: nowrap;
+
+  opacity: 0;
+  box-shadow: 18px 4px 26px 0 $color-shadow;
+
   transition:
     opacity $transition ease-out,
     transform $transition ease-out;
-  box-shadow: 18px 4px 26px 0 $color-shadow;
 }
 
 .contact-trigger-area {
@@ -56,8 +63,8 @@
   display: inline-block;
 
   &:hover .menu__contact-details {
-    opacity: 1;
-    transform: translateY(-50%) translateX(0);
     pointer-events: auto;
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
   }
 }

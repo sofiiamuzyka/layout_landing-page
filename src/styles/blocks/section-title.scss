@@ -1,10 +1,11 @@
 .section-title {
   margin: 0;
-  font-weight: $font-weight-bold;
+
   font-size: 32px;
+  font-weight: $font-weight-bold;
   line-height: 32px;
-  letter-spacing: -1.5px;
   text-align: center;
+  letter-spacing: -1.5px;
 
   @include on-tablet {
     font-size: 48px;

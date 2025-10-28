@@ -1,13 +1,18 @@
 .header {
   position: relative;
+
   box-sizing: border-box;
   height: 100vh;
+
   background-image: url(../images/header-desktop.png);
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-block: 25px;
 
     @include content-padding-inline;
@@ -21,10 +26,6 @@
       margin-inline: 0;
       padding-inline: $padding-desktop-inline;
     }
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   &__righticons {
@@ -37,15 +38,17 @@
     top: 200px;
     left: 50%;
     transform: translateX(-50%);
-    margin: 0;
-    font-family: $font-main;
-    font-weight: $font-weight-bold;
-    font-size: 40px;
-    line-height: 1;
-    letter-spacing: -1.5px;
-    text-align: center;
-    color: $color-white;
+
     width: calc(100vw - 2 * 20px);
+    margin: 0;
+
+    font-family: $font-main;
+    font-size: 40px;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+    color: $color-white;
+    text-align: center;
+    letter-spacing: -1.5px;
 
     @include on-tablet {
       width: 392px;

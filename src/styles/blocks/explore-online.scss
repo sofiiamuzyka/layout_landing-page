@@ -1,16 +1,15 @@
 .explore-online {
   &__info {
+    row-gap: $gap-48;
     margin-top: 40px;
 
     @include page-grid;
-
-    row-gap: $gap-48;
   }
 }
 
 .more {
-  grid-column: 1 / -1;
   display: flex;
+  grid-column: 1 / -1;
   flex-direction: column;
   gap: $gap-24;
 
@@ -34,21 +33,23 @@
 
   &__title {
     margin: 0;
-    font-weight: $font-weight-bold;
+
     font-size: $font-size-large;
+    font-weight: $font-weight-bold;
     line-height: 140%;
-    letter-spacing: 0;
-    text-align: center;
     color: $color-red;
+    text-align: center;
+    letter-spacing: 0;
   }
 
   &__details {
     margin: 0;
-    font-weight: $font-weight-regular;
+
     font-size: $font-size-base;
+    font-weight: $font-weight-regular;
     line-height: $line-height-base;
-    letter-spacing: 0;
-    text-align: center;
     color: $color-text-main;
+    text-align: center;
+    letter-spacing: 0;
   }
 }

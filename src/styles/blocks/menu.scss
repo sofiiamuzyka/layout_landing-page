@@ -1,9 +1,16 @@
 .menu {
-  box-sizing: border-box;
   position: fixed;
-  padding-block: 25px;
 
   overflow: auto;
+
+  box-sizing: border-box;
+  height: 100vh;
+  padding-block: 25px;
+
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+
+  background-color: $color-red;
 
   @include content-padding-inline;
 
@@ -17,20 +24,16 @@
     padding-inline: $padding-desktop-inline;
   }
 
-  height: 100vh;
-  background-color: $color-red;
-  font-weight: $font-weight-bold;
-  text-transform: uppercase;
-
   &__top {
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     position: sticky;
-    top: 0;
     z-index: 1;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
   }
 
   &__nav {
@@ -39,12 +42,14 @@
 
   &__phone-numbers {
     display: block;
-    color: $color-white;
-    text-decoration: none;
+
+    margin-bottom: 8px;
+
     font-size: $font-size-base;
     line-height: $line-height-base;
+    color: $color-white;
+    text-decoration: none;
     letter-spacing: 0;
-    margin-bottom: 8px;
 
     &:nth-of-type(2) {
       margin-bottom: 0;
@@ -53,14 +58,16 @@
 
   &__call-to-order {
     display: block;
-    color: $color-white;
-    text-decoration: none;
+
+    width: fit-content;
+    margin-top: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $color-white;
+
     font-size: 12px;
     line-height: 16px;
+    color: $color-white;
+    text-decoration: none;
     letter-spacing: 2px;
-    padding-bottom: 8px;
-    margin-top: 16px;
-    border-bottom: 1px solid $color-white;
-    width: fit-content;
   }
 }

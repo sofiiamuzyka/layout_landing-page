@@ -1,9 +1,11 @@
 .footer {
-  background-image: url(../images/footer.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 180px;
   z-index: -1;
   bottom: 0;
+
+  min-height: 180px;
+
+  background-image: url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

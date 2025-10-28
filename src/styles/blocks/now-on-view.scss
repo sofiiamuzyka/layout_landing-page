@@ -7,11 +7,12 @@
 
 .explore {
   margin: 8px 0 48px;
-  font-weight: $font-weight-regular;
+
   font-size: $font-size-base;
+  font-weight: $font-weight-regular;
   line-height: $line-height-base;
-  letter-spacing: 0;
   text-align: center;
+  letter-spacing: 0;
 }
 
 .collection {
@@ -69,8 +70,8 @@
       }
 
       a:nth-child(3) {
-        grid-column: span 4;
         display: block;
+        grid-column: span 4;
       }
     }
   }
@@ -113,19 +114,21 @@
 
   &__title {
     margin: 0;
-    font-weight: $font-weight-bold;
+
     font-size: $font-size-base;
+    font-weight: $font-weight-bold;
     line-height: $line-height-base;
-    letter-spacing: 0;
     color: $color-red;
+    letter-spacing: 0;
   }
 
   &__date {
     margin: 0;
-    font-weight: $font-weight-regular;
+
     font-size: $font-size-base;
+    font-weight: $font-weight-regular;
     line-height: $line-height-base;
-    letter-spacing: 0;
     color: $color-text-main;
+    letter-spacing: 0;
   }
 }

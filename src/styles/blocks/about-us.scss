@@ -2,9 +2,8 @@
   @include page-grid;
 
   &__top {
-    margin-bottom: 32px;
-
     grid-column: 1 / -1;
+    margin-bottom: 32px;
 
     @include on-tablet {
       grid-column: 1 / 4;
@@ -17,9 +16,8 @@
 
   &__info {
     display: grid;
-    row-gap: $gap-24;
-
     grid-column: 1 / -1;
+    row-gap: $gap-24;
 
     @include on-tablet {
       grid-column: 4 / 7;
@@ -33,20 +31,22 @@
 
 .visit {
   margin: 0 0 2px;
-  font-weight: $font-weight-bold;
+
   font-size: 12px;
+  font-weight: $font-weight-bold;
   line-height: 140%;
-  letter-spacing: 0;
   color: $color-red;
+  letter-spacing: 0;
 }
 
 .location {
   &__adress {
-    font-weight: $font-weight-bold;
+    margin: 0 0 16px;
+
     font-size: $font-size-large;
+    font-weight: $font-weight-bold;
     line-height: 30px;
     letter-spacing: 0;
-    margin: 0 0 16px;
   }
 
   &__schedule {
@@ -64,16 +64,16 @@
 
   &__hours,
   &__closed {
-    font-weight: $font-weight-bold;
     font-size: $font-size-base;
+    font-weight: $font-weight-bold;
     line-height: $line-height-base;
     letter-spacing: 0;
   }
 
   &__days,
   &__holiday {
-    font-weight: $font-weight-regular;
     font-size: $font-size-base;
+    font-weight: $font-weight-regular;
     line-height: $line-height-base;
     letter-spacing: 0;
   }

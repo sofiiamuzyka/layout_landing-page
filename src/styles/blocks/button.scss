@@ -1,23 +1,26 @@
 .now-on-view__button {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  color: $color-white;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-  letter-spacing: 0;
-  text-align: center;
-  text-decoration: none;
-  background-color: $color-red;
+  justify-content: center;
+
   width: 100%;
   height: 56px;
+  margin-top: 40px;
+
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0;
+
+  background-color: $color-red;
 
   @include on-tablet {
     width: 392px;
@@ -29,8 +32,8 @@
 }
 
 .contacts__form .button {
-  background-color: $color-red-dark;
   margin-top: 32px;
+  background-color: $color-red-dark;
 
   @include on-tablet {
     width: 100%;
