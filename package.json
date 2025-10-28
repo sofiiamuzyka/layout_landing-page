@@ -11,7 +11,7 @@
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
     "lint": "npm run style-format && npm run format && mate-scripts lint",
     "test:only": "mate-scripts test",
-    "build": "vite build --root src",
+    "build": "vite build --root src", 
     "deploy": "mate-scripts deploy",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
