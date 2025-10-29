@@ -63,8 +63,10 @@
   display: inline-block;
 
   &:hover .menu__contact-details {
-    pointer-events: auto;
-    transform: translateY(-50%) translateX(0);
-    opacity: 1;
+    @include on-desktop {
+      pointer-events: auto;
+      transform: translateY(-50%) translateX(0);
+      opacity: 1;
+    }
   }
 }

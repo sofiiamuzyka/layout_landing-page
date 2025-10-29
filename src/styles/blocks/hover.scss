@@ -1,8 +1,14 @@
-img {
+img,
+.icon--logo,
+.icon--menu,
+.icon--close {
   transition: all $transition ease;
 }
 
-img:hover {
+img:hover,
+.icon--logo:hover,
+.icon--menu:hover,
+.icon--close:hover {
   transform: scale(1.05);
 }
 
